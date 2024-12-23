@@ -22,6 +22,7 @@ analysis_cluster
 **.h5
 **.pth
 
+history_git.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

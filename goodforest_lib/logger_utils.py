@@ -34,7 +34,9 @@ def get_logger(name: str, log_filename: str):
 
 def write_message(message: str, logger: logging.Logger, level: str = "info"):
     message_picto = {"success": "✅", "info": "ℹ️", "warning": "⚠️", "error": "❌"}
-    message = f"{message_picto.get(level, "")} {message}"
+    # message = f"{message_picto.get(level, "")} {message}"
+    # correction XL "" emplaced by ''
+    message = f"{message_picto.get(level, '')} {message}"
     if logger is not None:
         if level == "info":
             logger.info(message)
