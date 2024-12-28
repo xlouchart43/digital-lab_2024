@@ -1,0 +1,12 @@
+## command to install the digital-lab_2024 package from github
+## and create a conda environment to run the notebooks
+mkdir fordead_goodforest
+cd fordead_goodforest/
+git clone https://github.com/xlouchart43/digital-lab_2024.git .
+conda create -p ./env python=3.10
+conda activate ./env/
+pip install -e .
+
+# environment pour notebook vscode avec python 3.10
+conda install -p ./env ipykernel --update-deps --force-reinstall
+code .
